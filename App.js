@@ -1,14 +1,16 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 20 }}>Gwej Belajar React Native Cuy</Text>
+      <Text style={{ fontSize: 25, fontWeight: "bold" }}>
+        Gwej Belajar React Native Cuy
+      </Text>
       <StatusBar style="auto" />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -17,3 +19,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+
+export default App;
